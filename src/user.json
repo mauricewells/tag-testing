@@ -1,0 +1,57 @@
+
+{
+    "gender": "male",
+    "name": {
+        "title": "Mr",
+        "first": "Patrick",
+        "last": "Bradley"
+    },
+    "location": {
+        "street": {
+            "number": 181,
+            "name": "O'Connell Street"
+        },
+        "city": "Lusk",
+        "state": "Longford",
+        "country": "Ireland",
+        "postcode": 29360,
+        "coordinates": {
+            "latitude": "22.7473",
+            "longitude": "-168.5446"
+        },
+        "timezone": {
+            "offset": "-2:00",
+            "description": "Mid-Atlantic"
+        }
+    },
+    "email": "patrick.bradley@example.com",
+    "login": {
+        "uuid": "c1609993-404a-4e5b-bf5c-a28844c77bc7",
+        "username": "greenrabbit669",
+        "password": "vampires",
+        "salt": "sasO6uS8",
+        "md5": "1f166f0a19ef3c136d906dfa47c624f5",
+        "sha1": "6a71344bfa78654182b42c7f260a4c9c7b562249",
+        "sha256": "09a9fda3ef746a9e42755ad1a6aafb8fecc00c639e10390acb6a156d6fb9a175"
+    },
+    "dob": {
+        "date": "1952-12-27T19:03:32.710Z",
+        "age": 68
+    },
+    "registered": {
+        "date": "2011-07-16T23:05:52.182Z",
+        "age": 9
+    },
+    "phone": "021-384-4774",
+    "cell": "081-862-2172",
+    "id": {
+        "name": "PPS",
+        "value": "9368441T"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/53.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/53.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/53.jpg"
+    },
+    "nat": "IE"
+}

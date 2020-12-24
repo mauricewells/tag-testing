@@ -1,0 +1,19 @@
+@import 'src/styles/variables.scss';
+
+.header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: $spacing * 10 $spacing * 6 $spacing * 6;
+  background-image: $background-gradient;
+  color: #fff;
+
+  &__title {
+    flex-grow: 1;
+    transform: translateX(-12px);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+@import 'src/styles/variables.scss';
+
+.user-profile {
+  margin-bottom: $spacing * 4;
+
+  &__summary {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: $spacing * 6;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin-bottom: $spacing * 2;
+    font-size: 1rem;
+    color: $primary-color;
+  }
+
+  &__location {
+    font-size: 12px;
+    color: $secondary-color;
+  }
+
+  &__details {
+    width: 100%;
+    display: flex;
+    background-image: $background-gradient;
+    box-shadow: inset 0px 10px 18px 0px $box-shadow;
+
+    &-section {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: $spacing * 4;
+      align-items: center;
+      color: #FFFFFF;
+    }
+  }
+
+  &__section {
+    &-label {
+      margin-bottom: $spacing * 2;
+      font-size: 14px;
+    }
+
+    &-content {
+      font-size: 12px;
+      word-break: break-word;
+      text-align: center;
+    }
+  }
+}

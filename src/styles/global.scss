@@ -1,0 +1,18 @@
+@import 'src/styles/variables.scss';
+
+.divider {
+  width: 1px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.spinner__wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users-list {
+  margin-top: $spacing * 4;
+}

@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+
+import { UserProfile, Layout, LoadingSpinner } from 'src/components';
+
+import './styles/global.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [users, setUsers] = React.useState([]);
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    (async () => {
+      const url = 'https://randomuser.me/api/?results=5';
+      try {
+        const response = await fetch(url, { method: 'GET' });
+        const { results } = await response.json();
+        setUsers(results);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setIsLoaded(true);
+      }
+    })();
+  }, []);
+
+  return isLoaded ? (
+    <Layout>
+      <div className="users-list">
+        {users.map((user, index) => (
+          <UserProfile key={index} user={user} />
+        ))}
+      </div>
+    </Layout>
+  ) : (
+    <div className="spinner__wrapper">
+      <LoadingSpinner />
     </div>
   );
 }

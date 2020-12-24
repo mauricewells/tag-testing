@@ -1,0 +1,10 @@
+@import 'src/styles/variables.scss';
+
+.accordion {
+  &__content {
+    padding: 0 $spacing * 4;
+    overflow: hidden;
+    overflow-anchor: none;
+    transition: all $transition-duration ease;
+  }
+}
