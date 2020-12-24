@@ -7,19 +7,19 @@ import './layout.style.scss';
 
 function Layout({ children }) {
   return (
-    <main>
+    <>
       <header className="header">
         <HamburgerIcon />
-        <h6 className="header__title">
+        <h1 className="header__title">
           Expandable Content
-        </h6>
+        </h1>
       </header>
-      <section>
+      <main>
         <Container>
           {children}
         </Container>
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
 

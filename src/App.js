@@ -23,7 +23,15 @@ function App() {
     })();
   }, []);
 
-  return isLoaded ? (
+  if (!isLoaded) {
+    return (
+      <div className="spinner__wrapper">
+        <LoadingSpinner />
+      </div>
+    );
+  }
+
+  return (
     <Layout>
       <div className="users-list">
         {users.map((user, index) => (
@@ -31,10 +39,6 @@ function App() {
         ))}
       </div>
     </Layout>
-  ) : (
-    <div className="spinner__wrapper">
-      <LoadingSpinner />
-    </div>
   );
 }
 

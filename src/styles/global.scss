@@ -13,6 +13,14 @@
   justify-content: center;
 }
 
+.text--primary {
+  color: $primary-color;
+}
+
+.text--secondary {
+  color: $secondary-color;
+}
+
 .users-list {
   margin-top: $spacing * 4;
 }

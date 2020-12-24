@@ -18,6 +18,11 @@ function UserProfile({ user }) {
           <div className="user-profile__info">
             <span className="user-profile__name">
               {`${user.name.first} ${user.name.last}`}
+              {user.dob && (
+                <span className="user-profile__dob">
+                  ({new Date(user.dob.date).getFullYear()})
+                </span>
+              )}
             </span>
             <span className="user-profile__location">
               {`${user.location.state}, ${user.location.country}`}
@@ -26,16 +31,16 @@ function UserProfile({ user }) {
         </div>
       </AccordionSummary>
       <AccordionDetails className="user-profile__details">
-        <div className="user-profile__details-section">
-          <span className="user-profile__section-label">Phone</span>
-          <span className="user-profile__section-content">
+        <div className="details-section">
+          <span className="details-section__label">Phone</span>
+          <span className="details-section__content">
             {user.phone}
           </span>
         </div>
         <div className="divider" />
-        <div className="user-profile__details-section">
-          <span className="user-profile__section-label">Email</span>
-          <span className="user-profile__section-content">
+        <div className="details-section">
+          <span className="details-section__label">Email</span>
+          <span className="details-section__content">
             {user.email}
           </span>
         </div>

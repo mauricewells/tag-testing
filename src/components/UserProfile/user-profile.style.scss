@@ -22,12 +22,18 @@
 
   &__name {
     margin-bottom: $spacing * 2;
-    font-size: 1rem;
+    font-size: $font-subtitle1;
     color: $primary-color;
   }
 
+  &__dob {
+    color: $secondary-color;
+    margin-left: $spacing * 2;
+    margin-right: 0;
+  }
+
   &__location {
-    font-size: 12px;
+    font-size: $font-caption;
     color: $secondary-color;
   }
 
@@ -36,26 +42,25 @@
     display: flex;
     background-image: $background-gradient;
     box-shadow: inset 0px 10px 18px 0px $box-shadow;
-
-    &-section {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: $spacing * 4;
-      align-items: center;
-      color: #FFFFFF;
-    }
   }
 
-  &__section {
-    &-label {
+
+  .details-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacing * 4;
+    align-items: center;
+    color: #FFFFFF;
+
+    &__label {
       margin-bottom: $spacing * 2;
-      font-size: 14px;
+      font-size: $font-subtitle2;
     }
 
-    &-content {
-      font-size: 12px;
+    &__content {
+      font-size: $font-caption;
       word-break: break-word;
       text-align: center;
     }
